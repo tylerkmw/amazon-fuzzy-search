@@ -2,6 +2,15 @@
 
 class ProductMatch extends AmazonQuery {
 
-    protected 
+    protected $action;
+    protected $searchTerm;
+
+    public function __construct() {
+        $this->action = 'GetMatchingProduct';
+    }
+
+    public function setItem($searchTerm) {
+        $this->searchTerm = $searchTerm;
+    }
 
 }

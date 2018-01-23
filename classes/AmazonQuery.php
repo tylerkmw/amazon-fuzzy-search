@@ -7,6 +7,7 @@ include '../includes/config.inc.php';
 
 class AmazonQuery {
 
+    // Set in the config file:
     protected $accessKey;
     protected $secretKey;
     protected $sellerId;
